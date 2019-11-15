@@ -1,2 +1,2 @@
 # UITextField-JCPlaceholder
-UITextField更改placeholder颜色和字体大小
+UITextField更改placeholder颜色和字体大小，支持pod
