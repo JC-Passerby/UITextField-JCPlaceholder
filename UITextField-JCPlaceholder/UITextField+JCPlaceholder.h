@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-NS_ASSUME_NONNULL_BEGIN
+//NS_ASSUME_NONNULL_BEGIN
 
 @interface UITextField (JCPlaceholder)
 
@@ -21,4 +21,4 @@ NS_ASSUME_NONNULL_BEGIN
                                               textFont:(NSInteger)textFont;
 @end
 
-NS_ASSUME_NONNULL_END
+//NS_ASSUME_NONNULL_END

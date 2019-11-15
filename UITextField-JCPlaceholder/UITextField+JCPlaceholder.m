@@ -8,6 +8,7 @@
 
 #import "UITextField+JCPlaceholder.h"
 #import <objc/runtime.h>
+
 @implementation UITextField (JCPlaceholder)
 + (void)load{
     static dispatch_once_t onceToken;
