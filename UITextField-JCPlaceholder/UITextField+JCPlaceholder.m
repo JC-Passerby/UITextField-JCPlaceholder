@@ -9,6 +9,8 @@
 #import "UITextField+JCPlaceholder.h"
 #import <objc/runtime.h>
 
+#define CUSTOMER_COLOR [UIColor blackColor]
+#define CUSTOMER_FONT  [UIFont systemFontOfSize:16]
 @implementation UITextField (JCPlaceholder)
 //需要统一更改的时候可打开load
 //+ (void)load {
@@ -37,12 +39,12 @@
 
 -(void)jc_setPlaceholder:(NSString *)placeholder{
     NSMutableAttributedString *placeholderAtbString = [[NSMutableAttributedString alloc] initWithString:placeholder];
-    [placeholderAtbString addAttribute:NSForegroundColorAttributeName
-                                 value:[UIColor blackColor]
-                                 range:NSMakeRange(0, placeholder.length)];
-    [placeholderAtbString addAttribute:NSFontAttributeName
-                                 value:[UIFont systemFontSize]
-                                 range:NSMakeRange(0, placeholder.length)];
+//    [placeholderAtbString addAttribute:NSForegroundColorAttributeName
+//                                 value:[UIColor blackColor]
+//                                 range:NSMakeRange(0, placeholder.length)];
+//    [placeholderAtbString addAttribute:NSFontAttributeName
+//                                 value:[UIFont systemFontOfSize:16.0f]
+//                                 range:NSMakeRange(0, placeholder.length)];
     self.attributedPlaceholder = placeholderAtbString;
     [self jc_setPlaceholder:placeholder];
 }
@@ -55,7 +57,7 @@
                   value:textColor
                   range:NSMakeRange(0, text.length)];
     [placeholder addAttribute:NSFontAttributeName
-                  value:[UIFont systemFontOfSize:textFont]
+                        value:[UIFont systemFontOfSize:textFont]
                   range:NSMakeRange(0, text.length)];
     return placeholder;
 }
