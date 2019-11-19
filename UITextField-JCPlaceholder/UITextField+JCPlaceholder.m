@@ -37,7 +37,17 @@
 //    });
 //}
 
-
+-(void)jc_setPlaceholder:(NSString *)placeholder{
+    NSMutableAttributedString *placeholderAtbString = [[NSMutableAttributedString alloc] initWithString:placeholder];
+    [placeholderAtbString addAttribute:NSForegroundColorAttributeName
+                                 value:CUSTOMER_COLOR
+                                 range:NSMakeRange(0, placeholder.length)];
+    [placeholderAtbString addAttribute:NSFontAttributeName
+                                 value:CUSTOMER_FONT
+                                 range:NSMakeRange(0, placeholder.length)];
+    self.attributedPlaceholder = placeholderAtbString;
+    [self jc_setPlaceholder:placeholder];
+}
 
 -(NSMutableAttributedString *)jcSetPlaceholderWithText:(NSString *)text
                                              textColor:(UIColor *)textColor
