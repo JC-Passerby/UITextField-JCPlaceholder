@@ -2,7 +2,7 @@ Pod::Spec.new do |s|
 # 项目名称
 s.name = 'UITextField-JCPlaceholder'
 # 版本号
-s.version = '1.0.1'
+s.version = '1.0.2'
 # 开源许可证
 s.license = { :type => "MIT", :file => "LICENSE" }
 # 描述一下项目的作用
