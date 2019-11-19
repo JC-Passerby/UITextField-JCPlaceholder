@@ -10,7 +10,7 @@
 #import <objc/runtime.h>
 
 #define CUSTOMER_COLOR [UIColor blackColor]
-#define CUSTOMER_FONT  [UIFont systemFontOfSize:16]
+#define CUSTOMER_FONT  [UIFont systemFontOfSize:15]
 @implementation UITextField (JCPlaceholder)
 //需要统一更改的时候可打开load
 //+ (void)load {
