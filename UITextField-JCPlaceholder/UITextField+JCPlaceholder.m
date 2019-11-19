@@ -46,7 +46,7 @@
 //                                 value:[UIFont systemFontOfSize:16.0f]
 //                                 range:NSMakeRange(0, placeholder.length)];
     self.attributedPlaceholder = placeholderAtbString;
-    [self jc_setPlaceholder:placeholder];
+//    [self jc_setPlaceholder:placeholder];
 }
 
 -(NSMutableAttributedString *)jcSetPlaceholderWithText:(NSString *)text
