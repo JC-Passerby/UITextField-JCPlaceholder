@@ -19,4 +19,5 @@ s.requires_arc = false
 s.ios.deployment_target = '8.0'
 # 文件
 s.source_files = "UITextField-JCPlaceholder/UITextField+JCPlaceholder.{h,m}"
+s.framework = "UIKit"
 end
